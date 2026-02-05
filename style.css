@@ -1,0 +1,119 @@
+		*{
+ margin : 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+
+body {
+    margin: auto;
+    padding: 50px;
+    text-align: left;
+    line-height: 1.5; 
+    width: 800px;
+}
+
+header {
+	display: block;
+	unicode-bidi: isolate;
+	margin-bottom: 30px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+ul.writing_list {
+	border-top: 1px solid black;
+}
+
+
+li {
+    unicode-bidi: isolate;
+}
+
+
+.writing_list_item {
+  display: grid;
+  grid-template-columns: 6rem 6rem 1fr;
+  align-items: center;   /* ← 같은 라인으로 맞추는 핵심 */
+  border-bottom: 1px solid #000;
+  padding: 1rem 0;
+}
+
+.writing_list_year,
+.writing_list_type {
+  font-size: 1.0rem;
+  color: #000;
+}
+
+.writing_list_title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: none;   /* 링크 밑줄 제거 */
+  color: #000;
+}
+
+/* 상세 본문 영역 */
+.writing_body {
+  padding-top: 50px;           /* “그 한 줄” 아래 여백 */
+  max-width: 600px;            /* LIM처럼 중앙 가독 폭 */
+  margin: 0 auto;              /* 가운데 정렬 */
+  font-family: "Noto Serif KR", serif;
+
+}
+
+/* 상세에서 현재 글 표시(선택) */
+.writing_list_item--current .writing_list_title {
+  /* LIM처럼 제목이 컬러/강조면 여기서 */
+  /* color: #00d6c9; */
+}
+
+/* 상세 페이지: 제목만 남기기 */
+.writing_list_detail .writing_list_item {
+  grid-template-columns: 1fr;   /* 한 컬럼 */
+}
+
+/* year / type 숨기기 */
+.writing_list_detail .writing_list_year,
+.writing_list_detail .writing_list_type {
+  display: none;
+}
+
+/* 제목을 맨 왼쪽 기준선에 */
+.writing_list_detail .writing_list_title {
+  grid-column: 1 / -1;
+}
+
+.writing_footer {
+  margin-top: 80px;      /* 본문과 충분한 거리 */
+  padding-top: 24px;
+  /*border-top: 1px solid #000;*/
+
+  text-align: center;   /* LIM 느낌: 중앙 */
+}
+
+/* 목록으로 버튼 */
+.back_to_list {
+  display: inline-block;
+
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #000;
+
+  padding: 8px 14px;
+  border: 1px solid #000;
+  background: transparent;
+}
+
+.back_to_list:hover {
+  background: #000;
+  color: #fff;
+}
+
+
+@media screen and (max-width: 704px) {
+
+}

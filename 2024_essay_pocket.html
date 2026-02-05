@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>나의 편애하는 고양이</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Noto+Serif+KR:wght@200..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>글쓰기</h1>
+  </header>
+
+  <!-- 목록에서 보이던 “그 한 줄”을 그대로 재현 -->
+  <ul class="writing_list writing_list_detail">
+    <li class="writing_list_item writing_list_item--current">
+      <div class="writing_list_year"></div>
+      <div class="writing_list_type"></div>
+      <!-- 상세 페이지에서는 링크 대신 span(또는 a에 href="") -->
+      <span class="writing_list_title">What's in my pocket</span>
+    </li>
+  </ul>
+
+  <!-- 그 아래로 본문 -->
+  <article class="writing_body">
+    <p>
+      첫 문단...
+    </p>
+
+    <p>
+      다음 문단...
+    </p>
+
+    <div class="writing_footer">
+    <a href="../index.html" class="back_to_list">목록으로 돌아가기</a>
+  	</div> 
+  </article>
+
+</body>
+</html>
+
