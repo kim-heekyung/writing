@@ -19,6 +19,10 @@ header {
 	margin-bottom: 30px;
 }
 
+h1.inner_haed {
+  visibility: hidden;
+} 
+
 ul {
     list-style: none;
     margin: 0;
@@ -58,9 +62,9 @@ li {
 
 /* 상세 본문 영역 */
 .writing_body {
-  padding-top: 50px;           /* “그 한 줄” 아래 여백 */
-  max-width: 600px;            /* LIM처럼 중앙 가독 폭 */
-  margin: 0 auto;              /* 가운데 정렬 */
+  padding-top: 50px;           
+  max-width: 600px;            
+  margin: 0 auto;              
   font-family: "Noto Serif KR", serif;
 
 }
@@ -112,6 +116,11 @@ li {
   background: #000;
   color: #fff;
 }
+
+p.divide {
+  text-align: center;
+}
+
 
 
 @media screen and (max-width: 704px) {
